@@ -16,11 +16,9 @@
         font-weight: bold;
     }
 
-    img.screenshot-under {
-        position: absolute;
-        left: 40%;
-        top: 2%;
-        z-index: 2;
+    .screenshot-container {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .banner-container {
