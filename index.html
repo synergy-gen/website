@@ -30,9 +30,15 @@
             crossorigin="anonymous"
         ></script>
 
-        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+        <!-- Custom Styling -->
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/xs.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/md.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/lg.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/xl.css" />
     </head>
     <body>
+        <div class="overlay"></div>
         <header>
             <div class="title">
                 <span class="name">S Y N E R G E N</span>
@@ -45,23 +51,25 @@
         </header>
         <main>
             <div class="container">
-                <h2>About</h2>
-                <p>
-                    Synergen (short for “Synergy Generator”) is not your typical goal tracking app. It creates an
-                    environment where users can thrive off the collective energy of others as they accomplish their
-                    goals. Not only can users create goals, but they can also adopt goals shared by others as their own
-                    and join groups of other users working towards the same goal. This ability to search through the
-                    productive creations of users and participate in them sets Synergen apart. With the power of a
-                    social network to facilitate goal-setting and goal-getting, your dreams are now within reach.
-                </p>
-                <h2>Motivation</h2>
-                <p>
-                    Existing mobile applications for goal tracking focus on the individual - there is no network
-                    associated with the goals you create. This leaves everyone with a mindset of “you’re on your own”
-                    when it comes to setting and accomplishing their goals. Shouldn’t there be a way for users to
-                    create, share, and adopt goals in a wonderfully simple and beautiful way? Welcome Synergen, bringing
-                    you together so that nothing is impossible.
-                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col banner-container">
+                                <span class="banner">UNLIMITED</span>
+                                <span class="subbanner">potential.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col hook">
+                                <p>Never wonder where to turn to when acheiving your goals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 screenshot-container">
+                        <img class="screenshot" src="assets/images/synergen-profile.png" />
+                        <img class="screenshot screenshot-under" src="assets/images/synergen-explore-mobile.png" />
+                    </div>
+                </div>
             </div>
         </main>
         <footer>

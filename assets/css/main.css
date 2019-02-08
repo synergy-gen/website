@@ -1,0 +1,120 @@
+:root {
+    --color-primary: #fbc02d;
+    --color-dark: #303030;
+    --color-black: #000000;
+    --color-white: #f1f1f1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--color-dark);
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/unlimted.jpg');
+    background-size: auto 100%;
+    opacity: 0.5;
+}
+
+main {
+    z-index: 0;
+    color: var(--color-white);
+    opacity: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-primary);
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px var(--color-black);
+    z-index: 100;
+}
+
+header .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .divider,
+header .slogan {
+    display: none;
+}
+
+header .app {
+    margin-left: auto;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-container .banner {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.banner-container .subbanner {
+    font-size: 45px;
+    margin-top: -20px;
+}
+
+.hook {
+    text-align: center;
+}
+
+.screenshot-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: show;
+    margin-bottom: 20px;
+}
+
+img.screenshot {
+    max-width: 340px;
+    margin: 10px;
+    box-shadow: 1px 2px 2px var(--color-black);
+    z-index: 3;
+}
+
+img.screenshot-under {
+    position: relative;
+}
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    z-index: 100;
+}
