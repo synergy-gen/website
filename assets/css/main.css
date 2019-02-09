@@ -111,8 +111,6 @@ img.screenshot-under {
 footer {
     background-color: var(--color-black);
     color: var(--color-white);
-    display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 4px;
     z-index: 100;
